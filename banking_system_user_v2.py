@@ -4,7 +4,7 @@ def menu():
     [1]  Depositar
     [2]  Sacar
     [3]  Extrato
-    [4]  Nova conta
+    [4]  Nova Conta
     [5]  Novo usuário
     [6]  Sair
     => """
@@ -90,7 +90,7 @@ def criar_conta(agencia, numero_conta, usuarios):
 
 
 def main():
-    LIMITE_SAQUES = 3
+    LIMITE_SAQUES = 5
     AGENCIA = "0001"
 
     saldo = 0
@@ -104,7 +104,7 @@ def main():
         opcao = menu()
 
         if opcao == "1":
-            valor = float(input("Informe o valor do depósito: "))
+            valor = float(input("\nInforme o valor do depósito: "))
 
             saldo, extrato = depositar(saldo, valor, extrato)
 
