@@ -7,6 +7,7 @@ def menu():
     [4]  Nova Conta
     [5]  Novo usuário
     [6]  Sair
+    
     => """
 
     return input(menu)
